@@ -36,10 +36,10 @@ function App() {
       />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Card />} />
-          <Route path="jogar" element={<CardJogar />} />
-          <Route path="participantes" element={<Participantes />} />
-          <Route path="participantes/:id" element={<Infos />} />
+          <Route path="/bolao" element={<Card />} />
+          <Route path="/bolao/jogar" element={<CardJogar />} />
+          <Route path="/bolao/participantes" element={<Participantes />} />
+          <Route path="/bolao/participantes/:id" element={<Infos />} />
         </Routes>
       </BrowserRouter>
     </>
