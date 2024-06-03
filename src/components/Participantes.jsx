@@ -50,7 +50,7 @@ const Participantes = () => {
             <h3>Thyeris</h3>
           </Link>
         </div>
-        <NavLink to="/" className="btnMain" end>
+        <NavLink to="/bolao" className="btnMain" end>
           VOLTAR
         </NavLink>
       </div>

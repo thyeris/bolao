@@ -78,7 +78,7 @@ const Infos = () => {
             <h2>- {vreal}</h2>
           </div>
         </div>
-        <NavLink to="/participantes" className="btnMain">
+        <NavLink to="/bolao/participantes" className="btnMain">
           VOLTAR
         </NavLink>
       </div>

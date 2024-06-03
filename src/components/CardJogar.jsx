@@ -71,7 +71,7 @@ const CardJogar = () => {
         >
           COPIAR CHAVE PIX
         </button>
-        <NavLink to="/" className="btnMain" end>
+        <NavLink to="/bolao" className="btnMain" end>
           VOLTAR
         </NavLink>
       </div>
