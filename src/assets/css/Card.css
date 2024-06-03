@@ -150,4 +150,7 @@
   .mobH2 {
     font-size: 17px;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
