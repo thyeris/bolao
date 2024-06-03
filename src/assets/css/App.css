@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 20px;
+}
+h1, h2 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 2px 2px rgb(0, 0, 0,.8);
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  margin: 0;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#tsparticles {
+  position: absolute;
+  z-index: -2;
+}
+.text-right {
+  text-align: right;
+}
+.amoungUs {
+  width: 60px;
+  position: absolute;
+  z-index: -1;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  animation: eject-spin 8s infinite linear;
+}
+@keyframes eject-spin {
+  from {
+    left: -60px;
+    transform: rotate(0deg);
+  }
+  to {
+    left: 100%;
+    transform: rotate(360deg);
+  }
+}
