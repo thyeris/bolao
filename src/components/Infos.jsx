@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../assets/css/Card.css';
+import { Card, TitleContent } from './Card';
 import { NavLink, useParams } from 'react-router-dom';
 
 const Infos = () => {
@@ -48,41 +48,36 @@ const Infos = () => {
   }, [id]);
 
   return (
-    <div className="cardMain animeLeft">
-      <div className="cardTitle">
-        <h1 className="mobH1">Bolão Quina de São João</h1>
-      </div>
-      <div className="cardContent">
-        <div className="cardRows cardRowsCenter">
-          <h2># {nome}</h2>
+    <Card>
+      <TitleContent extraClass={'cardRowsCenter'}>
+        <h2># {nome}</h2>
+      </TitleContent>
+      <div className="participantes">
+        <div className="cardRows cardRowsCol infos">
+          <h2 className="mobH2"># Qtd de Cotas</h2>
+          <h2>{cota}</h2>
         </div>
-        <div className="participantes">
-          <div className="cardRows cardRowsCol infos">
-            <h2># Qtd de Cotas</h2>
-            <h2>{cota}</h2>
-          </div>
-          <div className="cardRows cardRowsCol infos">
-            <h2># % do Prêmio</h2>
-            <h2>{porc}%</h2>
-          </div>
-          <div className="cardRows cardRowsCol infos">
-            <h2># Valor Ideal</h2>
-            <h2>{videal}</h2>
-          </div>
-          <div className="cardRows cardRowsCol infos">
-            <h2># Expectativa</h2>
-            <h2>{vexpec}</h2>
-          </div>
-          <div className="cardRows cardRowsCol infos">
-            <h2># Realidade</h2>
-            <h2>- {vreal}</h2>
-          </div>
+        <div className="cardRows cardRowsCol infos">
+          <h2 className="mobH2"># % do Prêmio</h2>
+          <h2>{porc}%</h2>
         </div>
-        <NavLink to="/bolao/participantes" className="btnMain">
-          VOLTAR
-        </NavLink>
+        <div className="cardRows cardRowsCol infos">
+          <h2 className="mobH2"># Valor Ideal</h2>
+          <h2>{videal}</h2>
+        </div>
+        <div className="cardRows cardRowsCol infos">
+          <h2 className="mobH2"># Expectativa</h2>
+          <h2>{vexpec}</h2>
+        </div>
+        <div className="cardRows cardRowsCol infos">
+          <h2 className="mobH2"># Realidade</h2>
+          <h2>- {vreal}</h2>
+        </div>
       </div>
-    </div>
+      <NavLink to="/bolao/participantes" className="btnMain">
+        VOLTAR
+      </NavLink>
+    </Card>
   );
 };
 
