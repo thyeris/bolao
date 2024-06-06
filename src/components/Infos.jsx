@@ -1,61 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import { Card, TitleContent } from './Card';
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Infos = () => {
-  const { id } = useParams();
-  const [nome, setNome] = useState();
-  const [cota, setCota] = useState();
-  const [porc, setPorc] = useState();
-  const [videal, setVideal] = useState();
-  const [vexpec, setVexpec] = useState();
-  const [vreal, setVreal] = useState();
+  const location = useLocation();
+  const { name, cotas, ctotal } = location.state;
+
+  const [porc, setPorc] = useState(0);
+  const [videal, setVideal] = useState(0);
+  const [vexpec, setVexpec] = useState(0);
+  const [vreal, setVreal] = useState(0);
 
   useEffect(() => {
-    const queryParameters = new URLSearchParams(window.location.search);
-    const nomeUrl = queryParameters.get('n').includes('-')
-      ? queryParameters.get('n').replace('-', ' ')
-      : queryParameters.get('n');
-    const cotaUrl = queryParameters.get('c');
-    const cotaTotal = queryParameters.get('t');
-    setNome((nome) => nomeUrl);
-    setCota((cota) => cotaUrl);
-    setPorc((porc) => ((cotaUrl * 100) / cotaTotal).toFixed(2));
+    setPorc((porc) => ((cotas * 100) / ctotal).toFixed(2));
     setVreal((vreal) =>
-      (2.5 * cotaUrl).toLocaleString('pt-br', {
+      (2.5 * cotas).toLocaleString('pt-br', {
         style: 'currency',
         currency: 'BRL',
       }),
     );
     setVideal((videal) =>
-      ((220000000 / Number(cotaTotal)) * Number(cotaUrl)).toLocaleString(
-        'pt-br',
-        {
-          style: 'currency',
-          currency: 'BRL',
-        },
-      ),
+      ((220000000 / Number(ctotal)) * cotas).toLocaleString('pt-br', {
+        style: 'currency',
+        currency: 'BRL',
+      }),
     );
     setVexpec((vexpec) =>
-      ((22000000 / Number(cotaTotal)) * Number(cotaUrl)).toLocaleString(
-        'pt-br',
-        {
-          style: 'currency',
-          currency: 'BRL',
-        },
-      ),
+      ((22000000 / Number(ctotal)) * cotas).toLocaleString('pt-br', {
+        style: 'currency',
+        currency: 'BRL',
+      }),
     );
-  }, [id]);
+  });
 
   return (
     <Card>
       <TitleContent extraClass={'cardRowsCenter'}>
-        <h2># {nome}</h2>
+        <h2># {name}</h2>
       </TitleContent>
       <div className="participantes">
         <div className="cardRows cardRowsCol infos">
           <h2 className="mobH2"># Qtd de Cotas</h2>
-          <h2>{cota}</h2>
+          <h2>{cotas}</h2>
         </div>
         <div className="cardRows cardRowsCol infos">
           <h2 className="mobH2"># % do Prêmio</h2>

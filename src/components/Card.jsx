@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../assets/css/Card.css';
 import { Link } from 'react-router-dom';
 
@@ -17,22 +17,17 @@ const TitleContent = ({ children, extraClass }) => {
   return <div className={`cardRows ${extraClass}`}>{children}</div>;
 };
 
-const Participante = ({ url, img, nome }) => {
-  const [ctotais, setCtotais] = useState(0);
+const Participante = ({ url, img, nome, cota, reportCota, total }) => {
   useEffect(() => {
-    document.querySelectorAll('.cardPart').forEach((e) => {
-      const getUrl = e.getAttribute('href');
-      var getCota = Number(
-        getUrl
-          .substring(getUrl.indexOf('&') + 1, getUrl.lastIndexOf('&'))
-          .replace(/\D/g, ''),
-      );
-      setCtotais((ctotais) => ctotais + getCota);
-    });
-  }, []);
+    reportCota(cota);
+  }, [cota]);
 
   return (
-    <Link to={`${url}&t=${ctotais}`} className="cardPart">
+    <Link
+      to={url}
+      state={{ name: nome, cotas: cota, ctotal: total }}
+      className="cardPart"
+    >
       <img
         src={img}
         className="amounguinho"

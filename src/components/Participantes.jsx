@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, TitleContent, Participante } from './Card';
 import { NavLink } from 'react-router-dom';
 import amoung01 from '../assets/images/amoung01.webp'; // Rei amarelo
@@ -15,6 +15,12 @@ import amoung11 from '../assets/images/amoung11.webp'; // Branco boat-hat
 import amoung12 from '../assets/images/amoung12.webp'; // Roxo balão
 
 const Participantes = () => {
+  const [totalCota, setTotalCota] = useState(0);
+
+  const handleReportCota = (cota) => {
+    setTotalCota((prevTotal) => prevTotal + cota);
+  };
+
   return (
     <Card>
       <TitleContent extraClass={'cardRowsCenter'}>
@@ -22,9 +28,12 @@ const Participantes = () => {
       </TitleContent>
       <div className="participantes cardRowsCol">
         <Participante
-          url={'thyeris?n=thyeris&c=4'}
+          url={'thyeris'}
           img={amoung01}
           nome={'Thyeris'}
+          cota={4}
+          reportCota={handleReportCota}
+          total={totalCota}
         />
       </div>
       <NavLink to="/bolao" className="btnMain" end>

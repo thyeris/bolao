@@ -153,4 +153,10 @@
   body {
     overflow: hidden !important;
   }
+  .qtdCalc button {
+    padding: 0 12px;
+  }
+  .participantes .cardPart {
+    gap: 5px;
+  }
 }
