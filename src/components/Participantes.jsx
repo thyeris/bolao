@@ -28,6 +28,38 @@ const Participantes = () => {
       </TitleContent>
       <div className="participantes cardRowsCol">
         <Participante
+          url={'ana'}
+          img={amoung07}
+          nome={'Ana'}
+          cota={4}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
+          url={'gabriel'}
+          img={amoung02}
+          nome={'Gabriel'}
+          cota={4}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
+          url={'osvaldo'}
+          img={amoung04}
+          nome={'Osvaldo'}
+          cota={6}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
+          url={'rafaela'}
+          img={amoung11}
+          nome={'Rafaela'}
+          cota={2}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
           url={'thyeris'}
           img={amoung01}
           nome={'Thyeris'}
