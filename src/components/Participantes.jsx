@@ -52,6 +52,14 @@ const Participantes = () => {
           total={totalCota}
         />
         <Participante
+          url={'guto'}
+          img={amoung06}
+          nome={'Guto'}
+          cota={4}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
           url={'joao'}
           img={amoung03}
           nome={'João'}
@@ -72,6 +80,14 @@ const Participantes = () => {
           img={amoung08}
           nome={'Lais'}
           cota={4}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
+          url={'mafe'}
+          img={amoung05}
+          nome={'Mafê'}
+          cota={8}
           reportCota={handleReportCota}
           total={totalCota}
         />
@@ -103,7 +119,7 @@ const Participantes = () => {
           url={'thyeris'}
           img={amoung01}
           nome={'Thyeris'}
-          cota={4}
+          cota={6}
           reportCota={handleReportCota}
           total={totalCota}
         />
