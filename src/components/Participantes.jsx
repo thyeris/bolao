@@ -60,9 +60,33 @@ const Participantes = () => {
           total={totalCota}
         />
         <Participante
+          url={'lais'}
+          img={amoung08}
+          nome={'Lais'}
+          cota={4}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
           url={'rafaela'}
-          img={amoung11}
+          img={amoung12}
           nome={'Rafaela'}
+          cota={2}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
+          url={'raquel'}
+          img={amoung11}
+          nome={'Raquel'}
+          cota={4}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
+          url={'priscyla'}
+          img={amoung10}
+          nome={'Priscyla'}
           cota={2}
           reportCota={handleReportCota}
           total={totalCota}
