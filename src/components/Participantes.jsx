@@ -36,6 +36,14 @@ const Participantes = () => {
           total={totalCota}
         />
         <Participante
+          url={'bruno'}
+          img={amoung02}
+          nome={'Bruno'}
+          cota={2}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
           url={'elis'}
           img={amoung01}
           nome={'Elis'}
