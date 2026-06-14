@@ -14,19 +14,19 @@ const Infos = () => {
   useEffect(() => {
     setPorc((porc) => ((cotas * 100) / ctotal).toFixed(2));
     setVreal((vreal) =>
-      (2.5 * cotas).toLocaleString('pt-br', {
+      (9 * cotas).toLocaleString('pt-br', {
         style: 'currency',
         currency: 'BRL',
       }),
     );
     setVideal((videal) =>
-      ((220000000 / Number(ctotal)) * cotas).toLocaleString('pt-br', {
+      ((247000000 / Number(ctotal)) * cotas).toLocaleString('pt-br', {
         style: 'currency',
         currency: 'BRL',
       }),
     );
     setVexpec((vexpec) =>
-      ((22000000 / Number(ctotal)) * cotas).toLocaleString('pt-br', {
+      ((24700000 / Number(ctotal)) * cotas).toLocaleString('pt-br', {
         style: 'currency',
         currency: 'BRL',
       }),
@@ -48,7 +48,7 @@ const Infos = () => {
           <h2>{porc}%</h2>
         </div>
         <div className="cardRows cardRowsCol infos">
-          <h2 className="mobH2"># Valor Ideal</h2>
+          <h2 className="mobH2"># Valor Aproximado</h2>
           <h2>{videal}</h2>
         </div>
         <div className="cardRows cardRowsCol infos">

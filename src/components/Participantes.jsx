@@ -28,122 +28,74 @@ const Participantes = () => {
       </TitleContent>
       <div className="participantes cardRowsCol">
         <Participante
+          url={'aryane'}
+          img={amoung01}
+          nome={'Aryane'}
+          cota={1}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
+          url={'amanda'}
+          img={amoung02}
+          nome={'Amanda'}
+          cota={1}
+          reportCota={handleReportCota}
+          total={totalCota}
+        />
+        <Participante
           url={'ana'}
-          img={amoung07}
+          img={amoung03}
           nome={'Ana'}
-          cota={4}
+          cota={1}
           reportCota={handleReportCota}
           total={totalCota}
         />
         <Participante
           url={'bruno'}
-          img={amoung02}
+          img={amoung04}
           nome={'Bruno'}
-          cota={2}
+          cota={1}
           reportCota={handleReportCota}
           total={totalCota}
         />
         <Participante
-          url={'elis'}
-          img={amoung01}
-          nome={'Elis'}
-          cota={4}
-          reportCota={handleReportCota}
-          total={totalCota}
-        />
-        <Participante
-          url={'flavio'}
-          img={amoung09}
-          nome={'Flávio'}
-          cota={8}
-          reportCota={handleReportCota}
-          total={totalCota}
-        />
-        <Participante
-          url={'gabriel'}
-          img={amoung02}
-          nome={'Gabriel'}
-          cota={4}
-          reportCota={handleReportCota}
-          total={totalCota}
-        />
-        <Participante
-          url={'guto'}
-          img={amoung06}
-          nome={'Guto'}
-          cota={4}
+          url={'jeff'}
+          img={amoung05}
+          nome={'Jeff'}
+          cota={1}
           reportCota={handleReportCota}
           total={totalCota}
         />
         <Participante
           url={'joao'}
-          img={amoung03}
+          img={amoung06}
           nome={'João'}
-          cota={2}
-          reportCota={handleReportCota}
-          total={totalCota}
-        />
-        <Participante
-          url={'osvaldo'}
-          img={amoung04}
-          nome={'Osvaldo'}
-          cota={6}
-          reportCota={handleReportCota}
-          total={totalCota}
-        />
-        <Participante
-          url={'philipinho'}
-          img={amoung04}
-          nome={'Philipinho'}
-          cota={4}
+          cota={1}
           reportCota={handleReportCota}
           total={totalCota}
         />
         <Participante
           url={'lais'}
-          img={amoung08}
+          img={amoung07}
           nome={'Lais'}
-          cota={4}
-          reportCota={handleReportCota}
-          total={totalCota}
-        />
-        <Participante
-          url={'mafe'}
-          img={amoung05}
-          nome={'Mafê'}
-          cota={8}
+          cota={1}
           reportCota={handleReportCota}
           total={totalCota}
         />
         <Participante
           url={'rafaela'}
-          img={amoung12}
+          img={amoung08}
           nome={'Rafaela'}
-          cota={2}
-          reportCota={handleReportCota}
-          total={totalCota}
-        />
-        <Participante
-          url={'raquel'}
-          img={amoung11}
-          nome={'Raquel'}
-          cota={4}
-          reportCota={handleReportCota}
-          total={totalCota}
-        />
-        <Participante
-          url={'priscyla'}
-          img={amoung10}
-          nome={'Priscyla'}
-          cota={2}
+          cota={1}
           reportCota={handleReportCota}
           total={totalCota}
         />
         <Participante
           url={'thyeris'}
-          img={amoung01}
+          img={amoung09}
           nome={'Thyeris'}
-          cota={6}
+          cota={1}
           reportCota={handleReportCota}
           total={totalCota}
         />

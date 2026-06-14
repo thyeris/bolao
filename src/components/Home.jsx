@@ -8,12 +8,12 @@ const Home = () => {
     <Card>
       <TitleContent extraClass={'cardRowsCenter'}>
         <h2># Prêmio Estimado</h2>
-        <h2 className="valorTotal">R$ 220.000.000,00</h2>
+        <h2 className="valorTotal">R$ 250.000.000,00</h2>
       </TitleContent>
-      <img src={quina} width={220} height={154} alt="Quina" className="quina" />
+      <img src={quina} width={220} height={154} alt="Quina" className="quina" />{/*}
       <NavLink to="jogar" className="btnMain">
         JOGAR
-      </NavLink>
+      </NavLink>*/}
       <NavLink to="participantes" className="btnMain">
         PARTICIPANTES
       </NavLink>
