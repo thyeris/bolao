@@ -14,7 +14,7 @@ const Infos = () => {
   useEffect(() => {
     setPorc((porc) => ((cotas * 100) / ctotal).toFixed(2));
     setVreal((vreal) =>
-      (9 * cotas).toLocaleString('pt-br', {
+      (10 * cotas).toLocaleString('pt-br', {
         style: 'currency',
         currency: 'BRL',
       }),
