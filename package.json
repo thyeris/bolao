@@ -2,7 +2,7 @@
   "homepage": "https://thyeris.github.io/bolao",
   "name": "bolaounit",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
