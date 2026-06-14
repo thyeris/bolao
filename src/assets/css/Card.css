@@ -76,6 +76,9 @@
   text-decoration: none;
   text-align: center;
 }
+.disBtn {
+   text-decoration: line-through;
+}
 .btnMain:hover {
   background: #fff;
   color: var(--bgHeavy);

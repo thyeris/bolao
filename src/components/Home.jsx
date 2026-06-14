@@ -17,7 +17,7 @@ const Home = () => {
       <NavLink to="participantes" className="btnMain">
         PARTICIPANTES
       </NavLink>
-      <button className="btnMain" disabled>
+      <button className="btnMain disBtn" disabled>
         RESULTADO
       </button>
     </Card>
